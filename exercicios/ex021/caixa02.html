@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags em HTML5</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #DB5E5E;
+            margin: 0px;
+        }
+
+        header{
+            background-color: #423333;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1 {
+            background-color: #756161;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #756161;
+            padding: 10px;
+            margin: 10px;
+            /*box-shadow: 1px 1px 1px black;*/
+            box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.446);
+            /*Medidas do box-shadow: 
+            1ª deslocamento horizontal direita/esquerda
+            2ª Deslocamento vertical cima/baixo
+            3ª Embaçamento
+            4ª alcance
+            5ª cor */
+            
+        }
+        nav > a {
+            color: #8C0303;
+            padding: 10px;
+            text-decoration: none;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: #423333;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.469);
+        }
+
+        article {
+            background-color: #756161;
+            border-style: solid;
+            border-color: #732929;
+            border-width: 3px ;
+        }
+
+        article > aside {
+            background-color: #756161;
+        }
+        footer {
+            background-color: #331D1D;
+            color: #8C0303;
+            text-align: center;
+            font-weight: bold;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias Sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur laboriosam hic doloremque possimus iste nostrum, odit voluptatibus veritatis non, ab est. Eligendi, non? Nostrum recusandae blanditiis consequatur animi velit est.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

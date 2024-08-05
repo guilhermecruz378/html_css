@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Yohproject-Cute-Camera-2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Img flexível</title>
+</head>
+<body>
+    <h1>Desafio da Imagem flexível</h1>
+    <p><ins>Você está</ins> vendo a <abbr title="olá">imagem</abbr> completa? Tente <em>ampliar</em> o <strong>tamanho</strong> da janela para ter uma <small>experiência</small> completa.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="foto/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto/paisagem-m.png" type="image/png">
+        <img src="foto/paisagem-g.png" alt="foto-flexível">
+        <h2>Para download da foto</h2>
+        <ul type="square">
+            <li><a href="foto/paisagem-g - Copia.pdf" download="paisagem-g - .pdf" type="application/pdf">link_para download pdf</a></li>
+            <li><a href="foto/paisagem-g-z- Copia.zip" download="paisagem-g-z- .zip" type="application/zip">link_para Arquivo zip</a></li>
+        </ul>
+    </picture>
+    
+</body>
+</html>

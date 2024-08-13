@@ -15,6 +15,7 @@
 }
 html, body {
     min-height: 100vh; /*viewport height -n% da altura-*/
+    margin: 0px;
     background-color: lightgray;
     font-family: var(--fonte1);
 }
@@ -25,12 +26,14 @@ header {
 }
 header > h1 {
     padding-top: 50px;
+    margin: 0px;
     font-variant: small-caps;
     font-family: var(--fonte2);
     font-size: 10vw; /*viewport width -n% da largura-*/
 }
 header > p {
     padding-bottom: 50px;
+    margin: 0px;
 }
 a {
     color: white;
@@ -49,7 +52,7 @@ section {
     font-family: var(--fonte3);
     font-size: 3.5vw;
 }
-section > {
+section > p {
     padding-bottom: 2em;
 }
 section.normal {
@@ -74,10 +77,12 @@ section#img01 {
     background-image: url(imagens/background001.jpg);
     background-position: right center;
     background-size: cover; 
+    background-attachment: fixed;
 }
 section#img02 {
     background-image: url(imagens/background002.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 footer {

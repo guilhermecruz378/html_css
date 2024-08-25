@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        iframe {
+            height: 500px;
+            width: 500px;
+            border: 1px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <!--iframe significa: é um frame-inline (Quadro em linha), no site da W3C não existe tradução para a palavra "iframe" ela é oque é -->
+    <h1>Testando o uso de um ifrmae</h1>
+    <p>
+        Acessando um site do 
+        <!--tamannho padrão do iframe é de 300x150px -->
+        
+        <iframe src="https://www.cursoemvideo.com/" frameborder="1" height="500">
+            <a href="https://www.cursoemvideo.com" target="_blank">cursoemvideo</a>
+        </iframe> <!--como se fosse uma aba nova/janela só que dentro do site.
+        um quadro inline == um quadro na mesma linha.
+        Existe alguns sites que tem configuração para não serem exibidos em site de terceiros. 
+        
+        -->
+        para aprender a programar.
+    </p>
+    <p>
+        O site do 
+        <iframe src="https://www.google.com.br" frameborder="0" height="500" width="500">
+            acesse o site do <a href="https://www.google.com.br" target="_blank">Google</a> <!--Esaa âncora está sendo usada para caso o navegador ou o dispositivo celular não consiga abrir o iframe, ao inves de dar um erro ele ira substituir por um link na ancoragem-->
+        </iframe>
+        também é muito legal, pena que não funciona dentro dp iframe. 
+    </p>
+    <p>
+        O repositório do Guanabara
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="400" width="600" scolling="no"> <!--scolling não é reconhecido pelo VScode.
+        scolling é um parametro usado para a barra de rolagem com o uso de: 
+
+            auto : pardão do parametro a barra de roalgem aparece quando o tamanho exceder o da imagem.
+            yes: mesmo se não exceder a imagem vai aparecer.
+            no: Não aparece a barra de rolagem.
+            
+        Em Alguns navegadores esse parametro não vai funcionar. -->
+            no <a href="https://gustavoguanabara.github.io" target="_blank">Github</a>
+        </iframe>
+        também é muito legal
+    </p>
+</body>
+</html>

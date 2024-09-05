@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!--Um formulário é um local aonde você coloca seus dados-->
+    <h1>Aprendendo a fazer formulários</h1>
+
+    <!--maneira mais excencial possível logo abaixo, detalhe nem sempre funcionar é a melhor forma de fazer ese modelo não é 100% BOM-->
+    <h2>Meu primeiro formulário</h2>
+    <form action="cadastro.php" autocomplete="off"> <!--
+        O "autocomplete" serve para ligar ou desligar a caixa de aparece com alguma opção de completamento 
+        
+        A função "action" == ação ira enviar os dados inseridos de um formulário para um script uma linguagem de programação
+
+        O navegador não sabe reconhecer que o nome em frente a etiqueta é da etiqueta para fazer essa ligação usamos o "label", ele tera o mesmo nome do "id"; o label e id devem ter o mesmo nome para o navegador saber identificar
+
+
+        -->
+        <p><label for="inome">nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

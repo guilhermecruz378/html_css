@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iusu">Usúario</label>
+            <!--o label vai criar uma ligação com o id do input no fomulário-->
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usúario" autocomplete="username">
+            <!--required torna o campo obrigatório-->
+            <!--size é quantos caracteres são mostrados-->
+            <!--placeholder Vai mostrar dentro da caixa uma palavra que você digitar-->
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <!--o label vai criar uma ligação com o id do input no fomulário-->
+            <input type="password" name="Senha" id="isenha" required minlength="8" maxlength="20" size="8" placeholder="min 8 letras" autocomplete="current-password">
+            <!--para senha usamos o type="password" ele vai ocultar os digitos-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <!--type="submit" vai criar um campo de envio de dados-->
+            <input type="reset" value="Limpar">
+            <!--type="reset" vai excluir tudo oque você digitou-->
+        </p>
+    </form>
+</body>
+</html>

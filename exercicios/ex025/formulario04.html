@@ -8,19 +8,26 @@
 <body>
     <h1>Exemplos de formulários</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail" required autocomplete="email">
-        </p>
-        <p>
-            <label for="itel">Telefone</label>
-            <input type="tel" name="Telefone" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required >
-            <!--Estudar mais sobre expressões regulares RegEx-->
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Deletar">
-        </p>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="Nome" id="inome" required autocomplete="name" maxlength="20" placeholder="Nome completo">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="E-mail">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="Telefone" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxxx-xxxx" >
+                <!--Estudar mais sobre expressões regulares RegEx-->
+            </p>
+        </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Deletar">
+            </p>
     </form>
 </body>
 </html>

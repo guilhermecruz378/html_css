@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Color e Range</legend>
+
+            <p>
+                <label for="icor"></label>
+                <input type="color" name="color" id="icor" value="#00ff00">
+            </p>
+            <p>
+                <label for="inivel"></label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+            </p>
+            <p>
+                <label for="ifoto"></label>
+                <input type="file" name="foto" id="ifoto">
+                <!--Quando você usa um tipo de controle de envio de arquivo você não pode usar o method="get" use o method="post", porque passam da limitação do get de 3mil byts-->
+            </p>
+
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Deletar">
+    </form>
+    
+</body>
+</html>

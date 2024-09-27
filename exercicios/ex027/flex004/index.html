@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            height: 200px;
+
+            display: flex; /*vai deixar a caixa flexivel vai se adaptar ao tamanho da pagina*/
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        div.item {
+            background-image: linear-gradient(to top, rgb(112, 170, 206), rgb(132, 112, 206));
+
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <!--O que é flexbox/flexible box module: ele trabalha com caixas, nós não podemos definir o tamanho e formato dela [foi desenvolvido na sua versão 3.0 das css (2017)] 
+    
+    só se usa a função flex no container (flex-container) e no que estiver dentro do contaniner os item (flex-items)
+    
+
+     ----  DIREÇÃO   ----
+    no flex'pai' que leva a configuração display='flex' podemos usar o flex-diretion
+    - A configuração padrao é flex-direction: row; (ESQUERDA PARA DIREITA).
+    - A configurção flex-direction: row-reverse; (DIREITA PARA ESQUERDA)
+    - flex-direction: column; (formato de coluna == CIMA PARA BAIXO)
+    - flex-direction: column; (formato de coluna == CIMA PARA BAIXO)
+    - - flex-direction: column-reverse; (formato de coluna == COLUNA DE BAIXO PARA CIMA)
+
+
+    Quando usamos essas direções temos que configurar os:
+    ----------- EIXOS ----------
+
+    Quando criamos a configuração flex-direction: row; eixo automaticamente fica no seu eixo principal (main-axis) gerando dois pontos principais main-start e o main-end.
+
+    Tambem é gerado o eixo transversal cross-axis
+    ele tambem me gera dois pontos o cross-start e o cross-end.
+
+
+
+
+
+    -->
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+</body>
+</html>

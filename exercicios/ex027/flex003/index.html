@@ -7,12 +7,12 @@
     <style>
         div.container{
             background-color: lightsalmon;
-            height: 100px;
+            height: 200px;
             display: flex; /*vai deixar a caixa flexivel vai se adaptar ao tamanho da pagina*/
             /*flex-direction: row-reverse;
             flex-wrap: wrap-reverse;*/
             /*flex-flow: row wrap;*/
-            flex-flow: column wrap;/* para usar a função de coluna(column) você obrigatóriamente deve dar um tamanho de altura usando o height */
+            flex-flow: column nowrap;/* para usar a função de coluna(column) você obrigatóriamente deve dar um tamanho de altura usando o height */
         }
         div.item {
             background-image: linear-gradient(to top, rgb(112, 170, 206), rgb(132, 112, 206));
@@ -59,6 +59,31 @@
         ---- SIMPLIFICANDO COM flex-flow ------
         flex-flow é a junção do flex-direction + flex-wrap 
         flex-flow: row nowrap;
+
+        -------- justify-content ----------
+        o justify-content vai fazer o aninhamento em relação ao main-axis ao EIXO PRINCIPAL
+        o primeiro valor é:
+        justify-content:flex-start; == o primeiro item vai ficar grudado no main-start e se ouver espaço livre ele vai ficar no final do eixo principal.
+        justify-content:flex-end; == vai ser o contrario do flex-start.
+
+        justify-content:center; == vai calcular exatamente o centro do container e os espaços em branco vão ser distribuidos pelos lados.
+
+        justify-content: space-between; == ele vai colocar o primeiro item no main-start e o ultimo item no main-end, todos os outros itens vão estar no meio com um espaçamento/distribuidos entre eles.
+
+        justify-content: space-evenly; ele não vai grudar os elementos no começo e no fim do eixo, oque ele vai fazer é: ele vai pegar os items e colocar no primeiro e ultimo item um espaçamento igual incluindo o meio para não grudalos.
+
+        justify-content: space-around; ele vai contar quantos elementos a caixa possui e vai dividir os espaços com a quantidade de elementos e vai centralizar dentro desses espaços.
+
+        --------- align-items -------
+        Ele vai aninhar conforme o sentido do CROSS-AXIS:
+
+        align-items: stretch; por padrão ele vem com essa função esticando os elementos.
+
+        align-items: flex-start; vai fazer ele grudar no inicio do eixo transversal .
+
+        align-items: flex-end; vai grudar no final do eixo transversal.
+
+        align-items: center; vai dividir na metade os espaços e vai colcoar metade de um espaços no inicio e outra metade no final, centralizando os elementos 
 
 
 

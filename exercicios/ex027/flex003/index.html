@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            height: 100px;
+            display: flex; /*vai deixar a caixa flexivel vai se adaptar ao tamanho da pagina*/
+            /*flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;*/
+            /*flex-flow: row wrap;*/
+            flex-flow: column wrap;/* para usar a função de coluna(column) você obrigatóriamente deve dar um tamanho de altura usando o height */
+        }
+        div.item {
+            background-image: linear-gradient(to top, rgb(112, 170, 206), rgb(132, 112, 206));
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+            
+        }
+    </style>
+</head>
+<body>
+   <!--O que é flexbox/flexible box module: ele trabalha com caixas, nós não podemos definir o tamanho e formato dela [foi desenvolvido na sua versão 3.0 das css (2017)] 
+    
+    só se usa a função flex no container (flex-container) e no que estiver dentro do contaniner os item (flex-items)
+    
+
+            /------ flex-diretion ------/
+
+     ----  DIREÇÃO   ----
+    no flex'pai' que leva a configuração display='flex' podemos usar o flex-diretion
+    - A configuração padrao é flex-direction: row; (ESQUERDA PARA DIREITA).
+    - A configurção flex-direction: row-reverse; (DIREITA PARA ESQUERDA)
+    - flex-direction: column; (formato de coluna == CIMA PARA BAIXO)
+    - flex-direction: column; (formato de coluna == CIMA PARA BAIXO)
+    - - flex-direction: column-reverse; (formato de coluna == COLUNA DE BAIXO PARA CIMA)
+
+
+    Quando usamos essas direções temos que configurar os:
+    ----------- EIXOS ----------
+
+    Quando criamos a configuração flex-direction: row; eixo automaticamente fica no seu eixo principal (main-axis) gerando dois pontos principais main-start e o main-end.
+
+    Tambem é gerado o eixo transversal cross-axis
+    ele tambem me gera dois pontos o cross-start e o cross-end.
+
+        /------- flex-wrap -------/
+        Ela vai configurar o comportamento da caixa.
+        -Por padrão o flex-wrap vem configurado como flex-wrap: nowrap; == Não quebra o conteudo.
+
+        -Outra configuração é o flex-wrap: wrap;Essa configuração ira fazer ele quebrar na direção do eixo transversal (cross-axis).
+
+        -Podemos também usar o inverso flex-wrap: wrap-reverse; quando chegar até o limite e tiver uma diminuida ele vai fazer o emcapsulamento porem do lado inverso do eixo transversal(cross-axis). 
+
+        ---- SIMPLIFICANDO COM flex-flow ------
+        flex-flow é a junção do flex-direction + flex-wrap 
+        flex-flow: row nowrap;
+
+
+
+    -->
+    <div class="container">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+
+</body>
+</html>

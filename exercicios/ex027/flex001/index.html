@@ -25,6 +25,28 @@
     
     só se usa a função flex no container (flex-container) e no que estiver dentro do contaniner os item (flex-items)
     
+
+     ----  DIREÇÃO   ----
+    no flex'pai' que leva a configuração display='flex' podemos usar o flex-diretion
+    - A configuração padrao é flex-direction: row; (ESQUERDA PARA DIREITA).
+    - A configurção flex-direction: row-reverse; (DIREITA PARA ESQUERDA)
+    - flex-direction: column; (formato de coluna == CIMA PARA BAIXO)
+    - flex-direction: column; (formato de coluna == CIMA PARA BAIXO)
+    - - flex-direction: column-reverse; (formato de coluna == COLUNA DE BAIXO PARA CIMA)
+
+
+    Quando usamos essas direções temos que configurar os:
+    ----------- EIXOS ----------
+
+    Quando criamos a configuração flex-direction: row; eixo automaticamente fica no seu eixo principal (main-axis) gerando dois pontos principais main-start e o main-end.
+
+    Tambem é gerado o eixo transversal cross-axis
+    ele tambem me gera dois pontos o cross-start e o cross-end.
+
+
+
+
+
     -->
     <div class="container">
         <div class="item">A</div>

@@ -1,9 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flexible box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex; /*vai deixar a caixa flexivel vai se adaptar ao tamanho da pagina*/
+            flex-flow: row wrap;
+            
+            align-content: space-around;
+            height: 400px;
+        }
+        div.item {
+            background-image: linear-gradient(to top, rgb(112, 170, 206), rgb(132, 112, 206));
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
 </head>
 <body>
     <!--
@@ -28,6 +44,19 @@
     justify-content: space-around; ele vai centralizar os valores nos espaços divididos.
     -->
 
-    
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            height: 200px;
+
+            display: flex; /*vai deixar a caixa flexivel vai se adaptar ao tamanho da pagina*/
+            flex-flow: row wrap;
+        }
+        div.item {
+            background-image: linear-gradient(to top, rgb(112, 170, 206), rgb(132, 112, 206));
+
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            flex-basis: 200px;
+        }
+        div#cxA {
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        div#cxB {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        div#cxC {
+            flex-shrink: 3;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    ------- flex-shrink -------
+    por padrao o flex-shrink recebe por padrão o valor 1(um) significado de flex-shrink: 1; é: 'os elementos podem encolher'
+    flex-shrink: 0; é: 'os elementos não podem encolher'
+
+    ------- flex-grow -----
+    por padrão o flex-grow é 0(zero). o significado de flex-grow: 0; é: 'os elementos não pode crescer'
+    flex-grow: 1; é: 'os elementos podem crescer'
+
+
+    -->
+    
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>

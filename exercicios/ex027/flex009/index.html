@@ -10,9 +10,7 @@
             height: 200px;
 
             display: flex; /*vai deixar a caixa flexivel vai se adaptar ao tamanho da pagina*/
-            flex-flow: row nowrap;
-            align-items: flex-start;
-            height: 400px;
+            flex-flow: row wrap;
         }
         div.item {
             background-image: linear-gradient(to top, rgb(112, 170, 206), rgb(132, 112, 206));
@@ -20,33 +18,7 @@
             border: 1px solid black;
             text-align: center;
             padding: 20px;
-        }
-        div#i1 {
-            order: 5;
-        }
-
-        div#i2 {
-            align-self: flex-end;
-        }
-
-        div#i3 {
-            align-self: center;
-        }
-
-        div#i4 {
-            align-self: auto;
-        }
-
-        div#i5 {
-            align-self: center;
-        }
-
-        div#i6 {
-            order: -1;
-        }
-
-        div#i7 {
-            align-self: stretch;
+            flex-basis: 150px;
         }
     </style>
 </head>
@@ -66,16 +38,20 @@
     align-self: flex-end
     align-self: center
     align-self: stretch
+
+    ----------- flex-basis -----
+    A propriedade flex-basis define o tamanho inicial dos elementos, em unidades de pixel, antes que o espaço remanescente seja redistribuído pode ser criado um tamanho limite e caso o container seja diminuido todos os valores de flex-basis irão diminuir de forma igual entre eles até onde der. O valor inicial desta propriedade é auto — neste caso o navegador observa se os itens possuem o mesmo tamanho.
+
     -->
     
     <div class="container">
-        <div class="item" id="i1">A</div>
-        <div class="item" id="i2">B</div>
-        <div class="item" id="i3">C</div>
-        <div class="item" id="i4">D</div>
-        <div class="item" id="i5">E</div>
-        <div class="item"id="i6">F</div>
-        <div class="item" id="i7">G</div>
+        <div class="item">A</div>
+        <div class="item">Outro conteudo</div>
+        <div class="item">C</div>
+        <div class="item">Conteudo um pouco maior</div>
+        <div class="item">E</div>
+        <div class="item">conteudo maior ainda, que vai ocupar mais espaço</div>
+        <div class="item">G</div>
     </div>
 </body>
 </html>

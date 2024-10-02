@@ -2,12 +2,13 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-body, html {
+body {
     background-color: lightgrey;
-    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
     height: 100vh;
     width: 100vw;
 }
@@ -15,41 +16,49 @@ body, html {
 header {
     background-color:rgb(128, 127, 127) ;
     color: white;
+    padding: 10px;
+    
     text-align: center;
     height: 350px;
 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
 }
 header > h1 {
-    padding: 10px;
     margin-bottom: 10px;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.548);
+    flex: 0 0 200px;
 }
 nav {
     display: flex;
-    flex-flow: column nowrap;
-    
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 nav > a{
-    align-items: center;
-    align-content: center;
-    flex: 1 1 40px;
-
     margin: 3px;
+    padding: 10px;
     border-radius: 10px;
 
     color: white;
     background-color: black;
 
     text-decoration: none;
+    text-align: center;
 }
 
 nav > a:hover {
-    background-color: rgb(161, 161, 161);
+    background-color: white;
+    color: black;
+    transition: background-color .5;
 }
 
 main {
     background-color: white;
     margin: 10px;
+    padding: 10px;
     border-radius: 10px;
     text-indent: 5px;
     text-align: justify;
